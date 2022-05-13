@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Cursiva";
+    src: url("../fonts/Angelia\ Davitson.otf");
+}
+
+body{
+    color:blue
+}
+h1{
+    font-family: "Cursiva","Lucida Handrwriting",cursive;
+    color: black;
+}
+
+#encabezado{
+    background-color: aqua;
+}

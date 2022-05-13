@@ -1,0 +1,124 @@
+  @font-face {
+    font-family: "Cursiva";
+    src: url("../fonts/BurbankBigCondensed-Bold.otf Davitson.otf");
+  }
+
+  body{
+    font-family: "Cursiva","Lucida Handrwriting",cursive;
+    color:black
+  }
+
+  h1{
+    color:white
+  }
+
+  #box{
+      width: 200px;
+      height: 200px;
+      padding: 24px 30px 20px 15px;
+      border: 3px solid;
+      margin: 25px 50px 20px 10px
+  }
+  #abuelo{
+      width: 1300px;
+      height: 600px;
+      background-color: rgb(0, 113, 151);
+      position: relative;
+      text-align: center;
+
+  }
+  #padre{
+      width: 350px;
+      height: 350px;
+      background-color: bisque;
+  }
+  #ArribaPagInicio{
+      width: 1300px;
+      height: 80px;
+      background-color: rgb(0, 59, 78);
+      position:relative;
+      text-align: center;
+  }
+  #ArribaPagInicioDos{
+    width: 200px;
+    height: 680px;
+    background-color: rgb(0, 255, 136);
+    position:absolute;
+    top:-0%;
+    left: 100%;
+    overflow:auto;
+}
+  #AbajoPagInicio{
+    width: 1500px;
+    height: 30px;
+    background-color: rgb(0, 57, 76);
+    position:absolute;
+  }
+  #absolutop{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(162, 215, 232);
+    position:relative;
+    top:15%;
+    left:10%;
+  }
+  #absolutopdos{
+    width: 301px;
+    height: 301px;
+    background-color: rgb(162, 215, 232);
+    position:relative;
+    top:19%;
+    left:5%;
+  }
+  #absolutoptres{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 217, 0);
+    position:absolute;
+    top:7%;
+    left:33%;
+
+  }
+  #absolutopcuatro{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 145, 0);
+    position:absolute;
+    top:7%;
+    left:55%;
+  }
+  #absolutopcinco{
+    width: 280px;
+    height: 170px;
+    background-color: rgb(0, 177, 68);
+    position:absolute;
+    top:9%;
+    left:76%;
+  }
+  #absolutopseis{
+    width: 250px;
+    height: 300px;
+    background-color: rgb(0, 217, 255);
+    position:absolute;
+    top:45%;
+    left:79%;
+    overflow:auto;
+  }
+  #absolutopsiete{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 0, 0);
+    position:absolute;
+    top:55%;
+    left:57%;
+    text-align: center;
+  }
+  #absolutopocho{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(181, 255, 209);
+    position:absolute;
+    top:55%;
+    left:35%;
+    text-align: center;
+  }
