@@ -38,6 +38,8 @@
       background-color: rgb(0, 59, 78);
       position:relative;
       text-align: center;
+      border:7px dotted rgb(255, 0, 0);
+
   }
   #ArribaPagInicioDos{
     width: 200px;

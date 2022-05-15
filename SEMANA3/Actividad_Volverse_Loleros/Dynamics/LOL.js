@@ -1,5 +1,5 @@
 class tanque{
-    constructor(vida,ataque,mana,armadura,nombre,habilidades,tipo,esFuerteContra1,esFuerteContra2){
+    constructor(vida,ataque,mana,armadura,nombre,habilidades,tipo,esFuerteContra1,esFuerteContra2,nombrecontr){
         this.vida=vida;
         this.ataque=ataque;
         this.mana=mana;
@@ -9,7 +9,7 @@ class tanque{
         this.tipo=tipo;
         this.esFuerteContra1=esFuerteContra1;
         this.esFuerteContra2=esFuerteContra2;
-
+        this.nombrecontr=nombrecontr;
     };
 
 
@@ -19,18 +19,12 @@ class tanque{
         console.log('Estás son mis habilidades:'+this.habilidades);
     };
 
-    comparar(tipo){
-        if(tipo==this.tipo){
-            console.log("LALAL");
-        }
-        if(tipo==LeeSi){
-            console.log("Tienes las de perder");
-        }
-        if(tipo==Jynx){
-            console.log("Tienes las de perder");
-        }
+    comparar(){
+        console.log('Si te encuentras un '+this.esFuerteContra1+' o un '+this.esFuerteContra2+' ganaras fácilmente :)');
+        console.log('Si te encuentras contra un Luchador o un Tirador puedes tener desventaja');
+        console.log("Si te encuentras otro tanque es pura habilidad xD");
     };
-    
+
 }
 
 class Asesino{
@@ -50,6 +44,12 @@ class Asesino{
         console.log('Mi nombre es:'+this.nombre2+', Soy un campeón de League of Legends');
         console.log('Mis grandiosas estadísticas son las siguientes: Vida:'+this.vida2+', Maná:'+this.mana2+', Ataque:'+this.ataque2);
         console.log('Estás son mis habilidades:'+this.habilidades2);
+    };
+
+    comparar(){
+        console.log('Si te encuentras un '+this.esFuerteContra12+' o un '+this.esFuerteContra22+' ganaras fácilmente :)');
+        console.log('Si te encuentras contra un Luchador o un tanque puedes tener desventaja');
+        console.log("Si te encuentras otro asesino es pura habilidad xD");
     };
 }
 
@@ -71,6 +71,12 @@ class Luchador{
         console.log('Mi nombre es:'+this.nombre3+', Soy un campeón de League of Legends');
         console.log('Mis grandiosas estadísticas son las siguientes: Vida:'+this.vida3+', Maná:'+this.mana3+', Ataque:'+this.ataque3);
         console.log('Estás son mis habilidades:'+this.habilidades3);
+    };
+
+    comparar(){
+        console.log('Si te encuentras un '+this.esFuerteContra13+' o un '+this.esFuerteContra23+' ganaras fácilmente :)');
+        console.log('Si te encuentras contra un tirador o un mago puedes tener desventaja');
+        console.log("Si te encuentras otro tirador es pura habilidad xD");
     };
 }
 
@@ -94,6 +100,11 @@ class Tirador{
         console.log('Mis grandiosas estadísticas son las siguientes: Vida:'+this.vida4+', Maná:'+this.mana4+', Ataque:'+this.ataque4);
         console.log('Estás son mis habilidades:'+this.habilidades4);
     };
+    comparar(){
+        console.log('Si te encuentras un '+this.esFuerteContra14+' o un '+this.esFuerteContra24+' ganaras fácilmente :)');
+        console.log('Si te encuentras contra un asesino o un mago puedes tener desventaja');
+        console.log("Si te encuentras otro tirador es pura habilidad xD");
+    };
 }
 
 class Mago{
@@ -116,7 +127,15 @@ class Mago{
         console.log('Mis grandiosas estadísticas son las siguientes: Vida:'+this.vida5+', Maná:'+this.mana5+', Ataque:'+this.ataque5);
         console.log('Estás son mis habilidades:'+this.habilidades5);
     };
+
+    comparar(){
+        console.log('Si te encuentras un '+this.esFuerteContra15+' o un '+this.esFuerteContra25+' ganaras fácilmente :)');
+        console.log('Si te encuentras contra un asesino o un tanque puedes tener desventaja');
+        console.log("Si te encuentras otro mago es pura habilidad xD");
+    };
 }
+
+
 
 const Leono = new tanque(210.8,100,85,100,'Leono',['Proyecta una imagen solar de su espada','inflige daño mágico'],'Tanque','Asesino','Mago');
 const LeeSi = new Luchador(172.5,132.25,100,10,'Lee-sin',['Canta,Baila,ETC','Estudia wrestling'],'Luchador','Asesino','Tanque');
@@ -124,9 +143,12 @@ const Jinx = new Tirador(90,173.6,100,50,'Jinx',['Canta','Tira con el arco'],'ti
 const Lux = new Mago(85,130,136.4,40,'Lux',['Hace trucos con un conejo','Desaparece cosas'],'mago','tirador','luchador');
 const Zed = new Asesino(95,182,80,'Zed',['Rushea el tryhard','Baila'],'Asesino','mago','tirador');
 
-
 console.log(Leono);
 console.log(LeeSi);
 console.log(Jinx);
 console.log(Lux);
 console.log(Zed);
+
+
+
+
