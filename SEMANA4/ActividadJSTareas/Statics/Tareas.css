@@ -1,0 +1,85 @@
+
+body{
+    background-color: rgb(0, 255, 157);
+    
+}
+
+#padre {
+    background-color: rgb(255, 255, 255);
+    width: 1000px;
+    height: 210px;
+    border-radius: 70px;
+    text-align: center;
+    left:0%;
+    position: relative;
+
+}
+
+#padre2 {
+    background-color: rgb(0, 255, 157);
+    width: 1000px;
+    height: 400px;
+    border-radius: 10px;
+    top:-5px;
+    text-align: center;
+    left:0%;
+    position: relative;
+    border-radius: 70px;
+    overflow:auto;
+
+}
+
+#abuelo{
+    background-color: rgb(0, 255, 157);
+    width: 1000px;
+    height: 600px;
+    top:15px;
+    left:20%;
+    position: relative;
+    text-align: center;
+}
+
+#abuelo2{
+    background-color: rgb(177, 155, 255);
+    width: 700px;
+    height: 800px;
+    top:10px;
+    left:0px;
+    position: absolute;
+    text-align: center;
+}
+
+#tarjeta{
+    background-color: rgb(214, 214, 214);
+    width: 400px;
+    height: 30px;
+    text-align: center;
+}
+
+
+
+#hola{
+    text-align: center;
+}
+
+#hola2{
+    background-color: aquamarine;
+    width: 1000px;
+    overflow:auto;
+}
+
+#agregar{
+    background-color: rgb(0, 255, 85);
+    border-radius: 10px;
+}
+
+#acado{
+    background-color: rgb(255, 255, 255);
+}
+
+#TareasRestantes{
+    background-color: rgb(146, 206, 255);
+    border-radius: 15px;
+    text-align: center;
+    
+}
