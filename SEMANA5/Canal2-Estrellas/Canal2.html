@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrellas</title>
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+    <div id="abuelo">
+        <div id="padre">
+            <br>
+            <h1>Dibujador de estrellas:</h1>
+            <br>
+            <canvas id="MICANVAS" width="400" height="400">
+            </canvas>
+            <form id="Estrella">
+                <br><br>
+                <label for="Picos">Número de Picos: </label>
+                <input type="Number" id="Picos" name="Picos" Min="4" Max="30" placeholder="(4-30)">
+                <br><br>
+                <label for="picudo">Picudo:</label>
+                <input type="range" id="picudo" name="picudo" min="10" max="100">
+                <label for="picudo">:No picudo</label>
+                <br><br>
+                <label for="contorno">Poco contorno</label>
+                <input type="range" id="contorno" name="contorno" min="1" max="12">
+                <label for="picudo">Más Contorno</label>
+                <br><br>
+                <label for="CESTRELLA">Color de la estrella:</label>
+                <input type="color" id="CESTRELLA" name="CESTRELLA">
+                <br><br>
+                <label for="CFONDO">Color del fondo:</label>
+                <input type="color" id="CFONDO" name="CFONDO" value="#FFFFFF">
+                <br><br>
+                <label for="Relleno"> Relleno: </label>
+                <input type="checkbox" id="Relleno" name="Relleno" >
+                
+            </form>
+        </div>
+    </div>
+    <script src="./Dynamics/canvasestrella.js"></script>
+</body>
+</html>
