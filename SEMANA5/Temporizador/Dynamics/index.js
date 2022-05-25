@@ -11,6 +11,8 @@ const MinutosLugar=document.getElementById("minutos");
 const SegundosLugar=document.getElementById("segundos");
 const REINICIARRR=document.getElementById("Reiniciar");
 const audioJi=new Audio("./Alarma.mp3");
+const contenedorrojo=document.getElementById("abuelo");
+const botones=document.getElementById("botones");
 
 let Minutos;
 let Segundos;
@@ -51,6 +53,7 @@ function SD(){ //Sacar datos del forms
 
 Click.addEventListener("click",()=>{
     Form.style.display="block";
+    contenedorrojo.style.height="820px";
 });
 
 Enviar.addEventListener("click",()=>{
@@ -75,6 +78,8 @@ Enviar.addEventListener("click",()=>{
     timerrrr.style.display="none";
     Form.style.display="none";
     holaaa.style="display:block"
+    contenedorrojo.style.height="670px";
+    botones.style.display="block";
 
 });
 Cerrar.addEventListener("click",()=>{
@@ -84,12 +89,12 @@ Cerrar.addEventListener("click",()=>{
 
    
 Iniciar.addEventListener("click",()=>{
-        console.log("Iniciar timer");
-        if(SegundosGuardados>=0&&MinutosGuardados>=0){
-            intervalo=setInterval(Segundossss,1000);
-        }
-        
-    });
+    console.log("Iniciar timer");
+    // if(SegundosGuardados>=0&&MinutosGuardados>=0){
+    //     intervalo=setInterval(Segundossss,1000);
+    // }
+    
+});
 
 Reiniciar.addEventListener("click",()=>{
     console.log("Se pauso el timer");
@@ -106,55 +111,72 @@ REINICIARRR.addEventListener("click",()=>{
 });
 
 
-function Segundossss(){
+// function Segundossss(){
 
-    if(SegundosGuardados<0){
-        SegundosGuardados=59;
-    }
-    if(SegundosGuardados<10){
-        SegundosCalculo =`0${SegundosGuardados}`;
-    }else{
-        SegundosCalculo=SegundosGuardados;
-    }
-    SegundosLugar.innerHTML=SegundosCalculo;
-    SegundosGuardados --;
-    Minutosss(SegundosGuardados);
-    if(SegundosGuardados<0||MinutosGuardados<0){
-        clearInterval(intervalo);
-        audioJi.volume=.2;
-        audioJi.play();
+//     if(SegundosCalculo==0&&MinutosGuardados<0){
+//         clearInterval(intervalo);
+//         audioJi.volume=.2;
+//         audioJi.play();
         
-    }
-
-    // Activar para verificar en la consola
-    console.log(SegundosGuardados+".  SegundosGuardados");
-    console.log(MinutosGuardados+".  MinutosGuardados");
-}
-
-function Minutosss(){
+//     }else{
+//         if(SegundosGuardados<0){
+//         SegundosGuardados=59;
+//     }
+//     if(SegundosGuardados<10){
+//         SegundosCalculo =`0${SegundosGuardados}`;
+//     }else{
+//         SegundosCalculo=SegundosGuardados;
+//     }
+//     SegundosLugar.innerHTML=SegundosCalculo;
+//     SegundosGuardados --;
+//     Minutosss(SegundosGuardados);
+//     }
     
-    if(SegundosGuardados==-1&& MinutosGuardados!==0){
-        setTimeout(()=>{
-            MinutosGuardados--;
-        },500)
-    }else if(SegundosGuardados==-1&& MinutosGuardados!==0){
-        setTimeout(()=>{
-            MinutosGuardados=59;
-        },500)
-    }
-    if(MinutosGuardados<10){
-        MinutosCalculo=`0${MinutosGuardados}`;
-    }else{
-        MinutosCalculo=MinutosGuardados;
-    }
-    MinutosLugar.innerHTML=MinutosCalculo;
-}
+    
+//     // if(MinutosGuardados==-1){
+//     //     clearInterval(intervalo);
+//     //     audioJi.volume=.2;
+//     //     audioJi.play();
+//     //     console.log("Termino el timer");
+//     // }
 
-console.log(MinutosCalculo);
-console.log(SegundosCalculo);
 
-function STOP(){
-    if(MinutosGuardados<0){
-        clearInterval(intervalo);
-    }
-}
+//     // Activar para verificar en la consola
+//     console.log(SegundosGuardados+".  SegundosGuardados");
+//     console.log(MinutosGuardados+".  MinutosGuardados");
+// }
+
+// if(MinutosGuardados==-1){
+//     clearInterval(intervalo);
+//     audioJi.volume=.2;
+//     audioJi.play();
+//     console.log("Termino el timer");
+// }
+
+// function Minutosss(){
+    
+//     if(SegundosGuardados==-1&& MinutosGuardados!==0){
+//         setTimeout(()=>{
+//             MinutosGuardados--;
+//         },500)
+//     }else if(SegundosGuardados==-1&& MinutosGuardados!==0){
+//         setTimeout(()=>{
+//             MinutosGuardados=59;
+//         },500)
+//     }
+//     if(MinutosGuardados<10){
+//         MinutosCalculo=`0${MinutosGuardados}`;
+//     }else{
+//         MinutosCalculo=MinutosGuardados;
+//     }
+//     MinutosLugar.innerHTML=MinutosCalculo;
+// }
+
+// console.log(MinutosCalculo);
+// console.log(SegundosCalculo);
+
+// function STOP(){
+//     if(MinutosGuardados<0){
+//         clearInterval(intervalo);
+//     }
+// }
