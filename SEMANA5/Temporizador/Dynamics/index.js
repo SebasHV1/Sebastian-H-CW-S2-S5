@@ -3,6 +3,7 @@
 const Click=document.getElementById("ola");
 const Form=document.getElementById("form");
 const Enviar=document.getElementById("Enviar");
+const Colocar1111=document.getElementById("Colocar");
 const Cerrar=document.getElementById("Cerrar");
 const Iniciar=document.getElementById("start");
 const Reiniciar=document.getElementById("restart");
@@ -14,6 +15,8 @@ const audioJi=new Audio("./Alarma.mp3");
 const contenedorrojo=document.getElementById("abuelo");
 const relojes=document.getElementById("reloj");
 const botones=document.getElementById("botones");
+const Actualizar=document.getElementById("Actualizar");
+const Actualizaaar2=document.getElementById("Actualizaaar");
 
 let Minutos;
 let Segundos;
@@ -59,34 +62,30 @@ function SD(){ //Sacar datos del forms
 }
 
 Click.addEventListener("click",()=>{
-    Form.style.display="block";
-    contenedorrojo.style.height="690px";
+    // Form.style.display="block";
+    // contenedorrojo.style.height="690px";
 });
 
-Enviar.addEventListener("click",()=>{
-    Form.style.display="none";
+Colocar1111.addEventListener("click",()=>{
+    // Form.style.display="none";
     console.log("Se colocaron los números en el timer");
     SD();
     console.log();
     console.log("Enviar :  ."+MinutosGuardados);
     console.log("Enviar :  ."+SegundosGuardados);
-    if(MinutosGuardados != NaN){
-        Form.style.display="block";
+    if(MinutosGuardados == NaN){
+        alert("Se colocaron mal los minutos");
     }
-    if(SegundosGuardados != NaN){
-        Form.style.display="block";
+    if(SegundosGuardados == NaN){
+        alert("Se colocaron mal los segundos");
     }
-    if(MinutosGuardados == 0){
-        Form.style.display="block";
-    }
-    if(SegundosGuardados == 0){
-        Form.style.display="block";
-    }
+
     timerrrr.style.display="none";
-    Form.style.display="none";
+    // Form.style.display="none";
     holaaa.style="display:block"
     contenedorrojo.style.height="630px";
     botones.style.display="block";
+    Actualizar.style.display="block";
 
     //Operaciones para saber los segundos totales y después ponerlas en las variables para evitar el Tempo
     console.log(".");
@@ -115,24 +114,46 @@ Cerrar.addEventListener("click",()=>{
 Iniciar.addEventListener("click",()=>{
     console.log("Iniciar timer");
     intervalo=setInterval(Segundossss,1000);
+    relojes.style.backgroundColor = '#00ffb3';
     
     
 });
 
+let P=0;
 Reiniciar.addEventListener("click",()=>{
-    console.log("Se pauso el timer");
-    clearInterval(intervalo)
+    P++;
+    if(P==1){
+        console.log("Se pauso el timer");
+        clearInterval(intervalo)
+        relojes.style.backgroundColor = '#a7ddcd';
+        
+    }
+    if(P==2){
+        console.log("Se reanudo el timer");
+        intervalo=setInterval(Segundossss,1000);
+        relojes.style.backgroundColor = '#00ffb3';
+        P=0;
+    }
+    
 });
 
 REINICIARRR.addEventListener("click",()=>{
     console.log("Se reinicio el timer");
+    relojes.style.backgroundColor = '#00ffb3';
     clearInterval(intervalo)
     MinutosGuardados=MinutosRespaldo;
     SegundosGuardados=SegundosRespaldo;
+    SegundosGuardados2=0;
     intervalo=setInterval(Segundossss,1000);
+
+
     
 });
 
+Actualizaaar2.addEventListener("click",()=>{
+    console.log("Actualizar navegador");
+    location.reload();
+});
 let SegundosGuardados2=0;
 
 function Segundossss(){
@@ -164,6 +185,7 @@ function Segundossss(){
         audioJi.volume=.2;
         audioJi.play();
         console.log("Termino el timer");
+        relojes.style.backgroundColor = '#00FF00';
     }
 
 

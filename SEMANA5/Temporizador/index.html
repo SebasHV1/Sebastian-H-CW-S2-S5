@@ -15,6 +15,7 @@
             <div id="centro">
                 <span data-bs-toggle="modal" data-bs-target="#exampleModal" name="tiempo" id="ola"> <h1 id="timerrrr" style="display:block">--<br>o<br>-- </span>
             </div>
+            <br>
             <div id="holaaa" style="display:none">
                 <div class="minutos" id="minutos">--</div>
                 Minutos<br>
@@ -26,7 +27,7 @@
         </div>
         </div>
         <br><br>
-        <div id="form" style="display:none">
+        <!-- <div id="form" style="display:none">
             <br><br>
             <span>Minutos: </span>
             <input type="number" max="99" min="00" id="minutos" name="minutos" class="Tintro" required>
@@ -37,34 +38,39 @@
             <button id="Enviar">Enviar</button>
             <button id="Cerrar">Cerrar</button>
             <br><br>
-        </div>
+        </div> -->
         <br><br>
         <div id="botones" style="display:none">
-            <button id="start">¡Comenzar!</button>
+            +<button id="start">¡Comenzar!</button>
             <button id="restart">Pausar</button>
-            <button id="Reiniciar">Reiniciar</button>
+            <button id="Reiniciar">Reiniciar</button>+
+        </div>
+        <div id="Actualizar" style="display:none">
+            <br>
+            <button id="Actualizaaar">Actualizar</button>
         </div>
     </div>
-    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content" style="text-align: center;">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Ingresa los datos del temporizador: </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <span>Minutos: </span>
-                        <input type="number" max="99" min="00" id="minutos" class="Tintro" required>
+                        <input type="number" max="99" min="00" id="minutos" class="Tintro" name="minutos"required>
+                        <br><br>
                         <span>Segundos: </span>
-                        <input type="number" max="99" min="00" id="segundos" class="Tintro" required>
+                        <input type="number" max="99" min="00" id="segundos" class="Tintro" name="segundos"required>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                        <button type="button" class="btn btn-secondary" id="Cerrar" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="Colocar"data-bs-dismiss="modal">Colocar</button>
                 </div>
             </div>
-        </div> -->
+        </div>
     <script src="./Dynamics/index.js"></script>
-    <!-- <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js "></script> -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js "></script>
 </body>
 </html>
