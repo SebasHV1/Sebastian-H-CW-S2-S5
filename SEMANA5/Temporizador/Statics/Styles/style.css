@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Negritas";
-    src: url("../Fonts/BurbankBigCondensed-Bold.otf");
+    src: url("../Fonts/DS-DIGI.TTF");
 }
 
 body{
@@ -10,7 +10,7 @@ body{
 h1{
     font-family: "Negritas","/BurbankBigCondensed-Bold.otf",Arial;
     color: black;
-    font-size: 90px;
+    font-size: 100px;
 }
 #holaaa{
     font-family: "Negritas","/BurbankBigCondensed-Bold.otf",Arial;
@@ -18,11 +18,11 @@ h1{
     font-size: 40px;
 }
 #abuelo{
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(71, 71, 71);
     width: 500px;
     height: 630px;
     left: 35%;
-    top:3%;
+    top:7%;
     position:absolute;
     border-radius: 50px;
     text-align: center;
@@ -38,19 +38,20 @@ h1{
     text-align: center;
 } */
 #reloj{
-    background-color:#8ac9dc;
+    background-color:#a7ddcd;
     border-radius:24%;
-    height: 500px;
-    width: 400px;
+    height: 400px;
+    width: 300px;
     position: relative;
-    left:50px;
+    left:100px;
     top:20px;
     border-color: black;
     border-width: 100%;
+
 }
 
 #form{
-    background-color: rgb(255, 198, 198);
+    background-color: rgb(172, 172, 172);
     width: 400px;
     left:50px;
     position: relative;

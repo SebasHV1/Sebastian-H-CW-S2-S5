@@ -12,6 +12,7 @@ const SegundosLugar=document.getElementById("segundos");
 const REINICIARRR=document.getElementById("Reiniciar");
 const audioJi=new Audio("./Alarma.mp3");
 const contenedorrojo=document.getElementById("abuelo");
+const relojes=document.getElementById("reloj");
 const botones=document.getElementById("botones");
 
 let Minutos;
@@ -39,23 +40,27 @@ function SD(){ //Sacar datos del forms
 
     if(MinutosGuardados>59){
         MinutosGuardados=59;
+        MinutosRespaldo=59;
     }
     if(SegundosGuardados>59){
         SegundosGuardados=59;
+        SegundosRespaldo=59;
     }
 
     if(MinutosGuardados<0){
         MinutosGuardados=0;
+        MinutosRespaldo=0;
     }
     if(SegundosGuardados<0){
         SegundosGuardados=0;
+        SegundosRespaldo=0;
     }
 
 }
 
 Click.addEventListener("click",()=>{
     Form.style.display="block";
-    contenedorrojo.style.height="820px";
+    contenedorrojo.style.height="690px";
 });
 
 Enviar.addEventListener("click",()=>{
@@ -80,7 +85,7 @@ Enviar.addEventListener("click",()=>{
     timerrrr.style.display="none";
     Form.style.display="none";
     holaaa.style="display:block"
-    contenedorrojo.style.height="670px";
+    contenedorrojo.style.height="630px";
     botones.style.display="block";
 
     //Operaciones para saber los segundos totales y después ponerlas en las variables para evitar el Tempo
