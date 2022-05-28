@@ -11,12 +11,12 @@
     $exp_base=(isset($_POST['exp_base'])&&$_POST['exp_base']!='')? $_POST['exp_base']: false;
     $tipo=(isset($_POST['tipo'])&&$_POST['tipo']!='')? $_POST['tipo']: false;
 
-    $sql="INSERT INTO pokemon VALUES(null,'$nombre','$altura','$peso','$exp_base','$tipo')";
+    $sql="INSERT INTO pokemon VALUES(null,'$nombre',$altura,$peso,$exp_base)";
     $res = mysqli_query($con,$sql);
     //Var dump NUNCA
     if($res==false)
     {
-        $respuesta==array("ok"=>false,"texto" => "No se puede ingresar");
+        $respuesta=array("ok"=>false,"texto" => "No se puede ingresar");
         echo json_encode($respuesta);
     }else{
 
@@ -25,8 +25,6 @@
         $sql ="INSERT INTO pokemon_types VALUES($id,$tipo,1)";
         mysqli_query($con,$sql);
 
-        $respuesta==array("ok"=>true,"id" =>$id,"texto"=>"Se puede ingresasar");
-        echo json_encode();
+        $respuesta=array("ok"=>true,"id" =>$id,"texto"=>"Se puede ingresasar");
+        echo json_encode($respuesta);
     }
-
-    json_encode();

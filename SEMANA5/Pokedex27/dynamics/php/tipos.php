@@ -11,7 +11,8 @@ else
 {
   $sql = "SELECT * FROM types";  //Crear variable para seleccionar datos (Asignar cadena)
   $res = mysqli_query($con, $sql); //Hace una consulta y asigna la cadena a la variable
-  // echo mysqli_error($con); Error dew Pokemon TYPES NUnca existio
+  echo mysqli_error($con);
+  // Error dew Pokemon TYPES NUnca existio
   $resultados = [];
   while($row = mysqli_fetch_assoc($res))
   {

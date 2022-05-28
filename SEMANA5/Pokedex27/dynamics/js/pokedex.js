@@ -16,6 +16,7 @@ window.addEventListener("load", ()=>{
 
   btnEnviar.addEventListener("click", (evento)=>{
     divAgregar.style.display = "none";
+
     evento.preventDefault(); // Detener botón del formulario
     let datosForm= new FormData(formNuevo); //Objeto datos del formulario 
     fetch("dynamics/php/crearpokemon.php",{
@@ -87,7 +88,7 @@ window.addEventListener("load", ()=>{
             divDatos.innerHTML+="<div class='dato'><strong>Altura</strong>"+datosJSON.datos.altura+"</div>";
             divDatos.innerHTML+="<div class='dato'><strong>Peso</strong>"+datosJSON.datos.peso+"</div>";
             divDatos.innerHTML+="<div class='dato'><strong>Tipo</strong>"+datosJSON.datos.tipo+"</div>";
-            divDatos.innerHTML+="<button data-id="+id+"id='btn-eliminar'>Eliminar Pokemon</button>";
+            divDatos.innerHTML+="<button data-id="+id+" id='btn-eliminar'>Eliminar Pokemon</button>";
             divDatos.style.display = "flex";
           }
         });
@@ -96,13 +97,14 @@ window.addEventListener("load", ()=>{
 
   //Escuchador de eventos pa borrar
   divDatos.addEventListener("click",(evento)=>{
-    if(evento.target.id=="btn-eliminar"){
-      let datosForm=new FormData();
-      datosForm.append("id",evento.target.dataset.id);
+    if(evento.target.id =="btn-eliminar"){
+      console.log("Boton para eliminar");
+      let datosForm = new FormData();
+      datosForm.append("id", evento.target.dataset.id);
 
       fetch("dynamics/php/borrarpokemon.php",{
         method:"POST",
-        body:datosForm,
+        body: datosForm,
       }).then((response)=>{
         return response.json();
       }).then((datosJSON)=>{
