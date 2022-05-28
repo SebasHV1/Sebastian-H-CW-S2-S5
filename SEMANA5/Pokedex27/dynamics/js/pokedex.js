@@ -76,7 +76,6 @@ window.addEventListener("load", ()=>{
             console.log("No se encuentra el pokemon");
             let div = document.createElement("div");
             div.innerHTML = "No hay coincidencias :(";
-            div.classList.add("coincidencia");
             divResultados.appendChild(div);
 
           }
