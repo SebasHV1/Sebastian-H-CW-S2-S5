@@ -63,6 +63,7 @@ window.addEventListener("load", ()=>{
         .then((datosJSON)=>{
           //Mostrar resultados
           console.log(datosJSON);
+          console.log("1,2,3,4")
           for(pokemon of datosJSON)
           {
             let div = document.createElement("div");
@@ -70,6 +71,14 @@ window.addEventListener("load", ()=>{
             div.dataset.id = pokemon.pok_id; //Ver ID vista y consultar
             div.classList.add("coincidencia");
             divResultados.appendChild(div);
+          }
+          if(datosJSON==0){
+            console.log("No se encuentra el pokemon");
+            let div = document.createElement("div");
+            div.innerHTML = "No hay coincidencias :(";
+            div.classList.add("coincidencia");
+            divResultados.appendChild(div);
+
           }
         });
     }
