@@ -28,6 +28,7 @@ window.addEventListener("load", ()=>{
     }).then((datosJSON)=>{ //Php devuelve un JSON ("OK")
       if(datosJSON.ok==true){
         alert("Todo bien");
+        document.getElementById("form-nuevo").reset(); //Limpiar formulario
       }else{
         alert(datosJSON.texto); //Texto php
       }

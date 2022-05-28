@@ -20,11 +20,11 @@
     <div id="contenedor-agregar" style="display:none">
       <form id="form-nuevo">
         <div><h2>Agregar un Pokemon</h2></div>
-        <div class="campo-form"><label>Nombre</label> <input type="text" name="nombre"></div>
-        <div class="campo-form"><label>Altura</label> <input type="number" name="altura" min="1"></div>
-        <div class="campo-form"><label>Peso</label> <input type="number" name="peso" min="1"></div>
-        <div class="campo-form"><label>Experiencia base</label> <input type="text" name="exp_base" min="1"></div>
-        <div class="campo-form"><label>Tipo</label> <select id="select-tipos" name="tipo"></select></div>
+        <div class="campo-form"><label>Nombre</label> <input type="text" name="nombre" required></div>
+        <div class="campo-form"><label>Altura</label> <input type="number" name="altura" min="1" required></div>
+        <div class="campo-form"><label>Peso</label> <input type="number" name="peso" min="1" required></div>
+        <div class="campo-form"><label>Experiencia base</label> <input type="text" name="exp_base" min="1" required></div>
+        <div class="campo-form"><label>Tipo</label> <select id="select-tipos" name="tipo" required></select></div>
         <button id="btn-enviar">Enviar</button>
       </form>
     </div>
