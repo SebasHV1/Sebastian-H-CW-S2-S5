@@ -1,0 +1,52 @@
+body{
+    background-image: url("../img/Inicios.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#registro{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    height: 400px;
+    border: 45px solid white;
+    background-color: white;
+    font-family: "Metropolis", "Copperplate", cursiva;
+}
+#iniciar{
+    position: relative;
+    left: 1000px;
+    top: 300px;
+    font-family: "Metropolis", "Copperplate", cursiva;
+}
+#redireccion{
+    font-family: "Metropolis", "Copperplate", cursiva;
+}
+.llenado{
+    width: 30px;
+    height: 20px;
+}
+.caja{
+    width: 170px;
+    height: 20px;
+    background-color: lightblue;
+    border: 2px black;
+    border-radius: 3%;
+}
+p{
+    left: 24%;
+    top: 35%;
+    position: absolute;
+    color: rgb(22, 27, 100);
+    font-family: "Metropolis", "Copperplate", cursiva;
+}
+
+.titulo{
+    left: 50%;
+    position: relative;
+    color: floralwhite;
+    font-family: "Metropolis", "Copperplate", cursiva;
+}
+@font-face{
+    font-family: "Metropolis";
+    src: url("../fonts/Metropolis/Metropolis-LightItalic.otf")
+}

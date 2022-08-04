@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/Diseño.css">
+    <title>Registro a pagina</title>
+</head>
+
+<body>
+    <h1 class="titulo">Registro</h1>
+    <p class="texto">
+        Registrese para poder acceder a la plataforma y poder <br/>
+        ingresar a sus clases.
+    </p>
+    <form id="registro" action="../dynamics/comprobar.php" method="post">
+        <label for="es">Seleccione su rol: </label>
+        <select name="es">
+            <option value="Alumno">Alumno</option>
+            <option value="Profesor">Profesor</option>
+        </select>
+        <br>
+        <br>
+        <hr/>
+        <label for="nombre">Nombre(s): </label>
+        <input class="caja" type="text" id="nombre" name="nombre" required placeholder="Nombre">
+        <br><br>
+        <label for="apellidos">Apellidos: </label>
+        <input class="caja" type="text" id="apellidos" name="apellidos" required>
+        <br><br>
+        <label for="NumDeCuenta">Numero de cuenta: </label>
+        <input class="caja" type="number" id="NumDeCuenta" name="NumDeCuenta" required>
+        <br><br>
+        <label for="correo">Dirección de correo: </label>
+        <input class="caja" type="text" id="correo" name="correo" required>
+        <br><br>
+        
+        <label for="contra">Ingrese una contraseña: </label>
+        <input class="caja" type="text" id="contra" name="contra" required>
+        <br><br>
+        <label for="comprobar">Repita la contraseña: </label>
+        <input class="caja" type="text" id="comprobar" name="comprobar" required>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Eliminar</button>
+    </form>
+</body>
+</html>

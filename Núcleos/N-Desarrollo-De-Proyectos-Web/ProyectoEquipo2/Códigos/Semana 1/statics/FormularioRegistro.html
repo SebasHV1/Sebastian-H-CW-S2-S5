@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro a pagina</title>
+</head>
+
+<body>
+    <center>
+        <h1>Registro</h1>
+        <form action="../dynamics/comprobar.php" method="post">
+            <fieldset>
+                <legend>Registro</legend>
+                <label for="nombre">Nombre(s): </label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+                <br><br>
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" id="apellidos" name="apellidos" required>
+                <br><br>
+                <label for="NumDeCuenta">Numero de cuenta: </label>
+                <input type="number" id="NumDeCuenta" name="NumDeCuenta" required>
+                <br><br>
+                <label for="correo">Dirección de correo: </label>
+                <input type="text" id="correo" name="correo" required>
+                <br><br>
+                <label for="es">Seleccione su tipo de usuario: </label>
+                <select name="es">
+                    <option value="Alumno">Alumno</option>
+                    <option value="Profesor">Profesor</option>
+                </select>
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Eliminar</button>
+            </fieldset>
+        </form>
+    </center>
+</body>
+</html>

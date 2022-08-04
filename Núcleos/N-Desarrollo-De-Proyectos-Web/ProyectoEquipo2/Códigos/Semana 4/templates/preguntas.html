@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../statics/style/Diseño.css">
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js "></script>
+    <link href="../statics/libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.css" rel="stylesheet">
+    <title>Preguntas</title>
+</head>
+<body>
+    <nav class="navbar --bs-border-color-translucent: rgba(0, 0, 0, 0.175);">
+        <div class="container-fluid">
+            <img id="logo" src="../statics/img/coyote.png" alt="logoENP6">
+            <span class="navbar-brand mb-0 h1">Preguntas</span>
+            <span class="navbar-brand mb-0 h1 usuario">Usuario</span>
+        </div>
+    </nav>
+    <div id="zonas" style="display: none;">
+        <div class="redireccion" id="RedTablon">Tablon de alumnos</div>
+        <div class="redireccion" id="RedForo">Foro de preguntas</div>
+    </div>
+    <div style="display: flex;">
+        <div id="asignaturas">Clases
+            <div class="clases">Ejemplo Clase<br/>Profesor</div>
+        </div>
+        <div id="tablon">Preguntas
+            <div class="zona-pregunta">
+                <div class="pregunta">Hola, soy una pregunta</div>
+                <div class="respuesta">Hola yo soy una respuesta</div>
+                <div class="respuesta">Hola yo soy otra respuesta</div>
+            </div>
+        </div>
+        <div id="importantes">Importantes
+            <div class="importante">Hola soy algo importante</div>
+        </div>
+        <div id="apartado-importantes">
+            <h1 id="Importantes">
+                Importantes
+            </h1>
+            <div id="calendario" style="display: block;">
+                <div id="mes-año">
+                    <div id="mes-anterior">.</div>
+                    <div id="mes"></div>
+                    <div id="año"></div>
+                    <div id="mes-posterior">.</div>
+                </div>
+        
+                <div class="semana">
+                    <div id="lunes">
+                        Lun
+                    </div>
+                    <div id="martes">
+                        Mar
+                    </div>
+                    <div id="miercoles">
+                        Mier
+                    </div>
+                    <div id="jueves">
+                        Jue
+                    </div>
+                    <div id="viernes">
+                        Vier
+                    </div>
+                    <div id="sabado">
+                        Sab
+                    </div>
+                    <div id="domingo">
+                        Dom
+                    </div>
+                </div>
+        
+                <div id="fechas"></div>
+    
+                <form id="evento-calendario" style="color: white; display: none;">
+                    Añade un evento
+                    <br/>
+                    <label for="diacalendario" style="left: 1vw; position:absolute; top: 30%;">
+                        Día
+                        <input id="diacalendario" name="diacalendario" type="number" max="31" min="1"> 
+                    </label>
+                    <br/><br/>
+                    <label for="mescalendario" style="left: 4vw; position:relative; top: -8%;">
+                        Mes
+                        <input id="mescalendario" name="mescalendario" type="number" max="31" min="1"> 
+                    </label>
+                    <br/><br/>
+                    <label for="añocalendario" style="left: 0vw; position:relative; top: -14%;">
+                        Año
+                        <input id="añocalendario" name="añocalendario" type="number" min="2022"> 
+                    </label>
+                    <br/>
+                    <button type="submit" id="añadir-calendario" style="left: 0vw; position:relative; top: -9%;">
+                        Añadir
+                    </button>
+                </form>
+    
+                <button type="button" id="añadir-evento">
+                    Añadir evento
+                </button>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Aula virtual - Equipo2 | Curso Web 2022</span>
+    </div>
+    
+    <script src="../dynamics/Js/preguntas.js"></script>
+</body>
+</html>
