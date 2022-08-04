@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./six.php" method="post">
+        <fieldset>
+            <legend>Boletos de SIX FLAGS</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" required>
+            <br><br>
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" name="apellidos"required>
+            <br><br>
+            <label for="Edad">Edad: </label>
+            <input type="number" name="Edad"required>
+            <br><br>
+            <label for="direccion">Dirección: </label>
+            <input type="text" name="direccion"required>
+            <br><br>
+            <label for="numerbol">Número de Boletos:</label>
+            <input type="number" name="numerbol" value="1" min="1" max="15" step="1">
+            <br><br>
+            <label> Tipo de Boleto:  </label>
+            <select name="Tipos">
+                <option value="value1">Boleto de un Día</option>
+                <option value="value2">Flash Pass</option>
+                <option value="value3">Gente Rica</option>
+                <option value="value4">Batman Pass</option>
+                <option value="value5">Superman Pass</option>
+
+            </select><br><br><br>
+            <button type="submit">Enviar</button>
+            <input type="Reset" value="Borrar todo">
+            </fieldset>
+    </form>
+    
+</body>
+</html>
