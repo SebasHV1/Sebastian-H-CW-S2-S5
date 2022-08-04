@@ -1,4 +1,7 @@
 Semana 1: https://github.com/SebasHV1/SebasHV1-Sebastian-CW-S1
-
-Biblioteca de Bavel: https://github.com/FersaLopez/ACT-Biblioteca_Babel
+Biblioteca de Babel: https://github.com/FersaLopez/ACT-Biblioteca_Babel
 Frogger: https://github.com/SantiagoDanda/Frogger
+Proyecto Final: https://github.com/ErickRodMtz/ProyectoEquipo2
+
+
+Carpeta de Google Drive con evidencias: https://drive.google.com/drive/folders/18witn915Xcz8xdEVo3cjA7oWVBnMNRsJ?usp=sharing
