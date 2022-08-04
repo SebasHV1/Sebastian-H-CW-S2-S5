@@ -1,0 +1,53 @@
+.canvas{
+    background-color: rgb(116, 116, 116);
+}
+
+body{
+    background-color: rgb(170, 182, 181);
+}
+#ARRIBA{
+    background-color: rgb(133, 133, 248);
+    width: 1000px;
+    height: 100px;
+    border-radius: 50px;
+}
+.segundos{
+    text-align: center;
+    background-color: rgb(255, 224, 85);
+    position:fixed;
+    width: 150px;
+    height: 30px;
+    left:13%;
+    top:37px;
+    border-radius: 30px;
+}
+
+.puntuacion{
+    text-align: center;
+    background-color: chartreuse;
+    position:fixed;
+    width: 150px;
+    height: 30px;
+    left:31%;
+    top:37px;
+    border-radius: 30px;
+}
+
+.mejorpuntuacion{
+    text-align: center;
+    background-color: rgb(59, 255, 229);
+    position:fixed;
+    width: 190px;
+    height: 30px;
+    left:47%;
+    top:37px;
+    border-radius: 30px;
+    
+}
+
+.botones{
+    background-color: white;
+    text-align: center;
+    border-radius: 20%;
+}
+

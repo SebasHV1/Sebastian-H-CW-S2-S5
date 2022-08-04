@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <link href="./statics/Tareas.css"rel="stylesheet">
+</head>
+<body>
+    <div id="abuelo">
+        <div id="padre">
+            <h1>Lista de Tareas:</h1>
+            <input id="input" name="input" type="text">
+            <br><br>
+            <div id="hola">
+                <select id="materia" name="Materia">
+                    <option value="Seleccionemat">Seleccione:</option>
+                    <option value="Matemáticas" id="materia1">Matemáticas</option>
+                    <option value="Literatura" id="materia2">Literatura</option>
+                    <option value="Biología"id="materia3">Biología</option>
+                    <option value="Química"id="materia4" >Química</option>
+                    <option value="Física"id="materia5">Física</option>
+                    <option value="Otra"id="materia6">Otra:</option>
+                </select>
+                <div id="formulariootra" style="display: none;">
+                    <br>
+                    <input id="input2" name="input2" type="text">
+                </div>
+            </div>
+            <br><br>
+            <button id="agregar">Añadir tarea</button>
+            <br><br>
+        </div>
+        <br>
+        <div id="padre2" style="display: none;">
+            <div id="restantes">
+                <ul id="TareasRestantes">
+                </ul>
+            </div>
+            <br>
+            Tareas completadas: * de *
+        </div>
+        
+    </div>
+    
+    <script src="./dynamics/Tareas.js">
+    </script>
+</body>
+</html>
